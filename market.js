@@ -26,7 +26,8 @@ function validatePassword(password) {
         var isVlidPassword = validatePassword(password);
         console.log(isValidEmail);
         if (true == isValidEmail && true == isVlidPassword) {
-            window.location.href = 'Acceuil.html';
+            window.location.href = 'index.html';
+
             console.log('Valid');
         } else {
             // get elemet by id or class to show invalid message
@@ -41,4 +42,3 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
-document.toUpperCase();
