@@ -24,20 +24,24 @@ function validatePassword(password) {
 
         var isVlidPassword = validatePassword(password);
         console.log(isValidEmail);
+        
         if (true == isValidEmail && true == isVlidPassword) {
             window.location.href = 'index.html';
 
             console.log('Valid');
         } else {
-            // get elemet by id or class to show invalid message
+            window.location.href = 'inscription.html';
             console.log('Invalid');
         }
     });
+  
+    const btn = document.querySelector('.navBar button');
+    const nav_ul = document.querySelector('.navBar .links ul');
+    
+    
+    btn.addEventListener('click', () => {
+    
+        nav_ul.classList.toggle('activee');
+    })
 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
+    

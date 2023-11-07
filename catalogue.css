@@ -1,0 +1,102 @@
+
+header{
+    text-align: center;
+}
+.man{
+    display: flex;
+    justify-content: space-between;
+}
+.man h3{
+    left: -195px;
+    position: relative;
+    top: 380px;
+}
+.man img{
+    margin-top: 10px;
+    border-radius: 44px ;
+    border: 2px solid #000;
+
+}
+.wom-2 h3{
+
+}
+.man img:hover {
+    transition: all 0.3s ease-in-out;
+    border: 14px solid #645d5d;
+}
+
+
+.man-2{
+    margin-top: 90px;
+}
+.catalogue h2{
+    position: relative;
+    right: 58px;
+    bottom: 70px;
+    width: 100%;
+    height: auto;
+    
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    
+}
+
+.wom img{
+    margin-top: 99px;
+}
+.wom h3{
+    position: relative;
+    top: 578px;
+    left: -196px;
+    font-size: 20px;
+    color: #000000;
+    }
+
+.child{ 
+    margin-top: 90px;
+}
+.child h3{
+    position: relative;
+    top: 392px;
+    left: -196px;
+    font-size: 20px;
+    color: #000000;
+    
+}
+
+
+
+
+
+
+@media (max-width : 575px ){
+    .man{
+        display: flexbox;
+        flex-wrap: wrap;
+    }
+    .man img{
+
+left: 100px;
+
+position: relative;
+
+margin-top: 65px;
+
+}
+    .man  h3{
+
+position: relative;
+
+top: 418px;
+
+}
+
+.wom h3{
+    left: -259px;
+    position: relative;
+    top: 1030px;
+}
+    
+}

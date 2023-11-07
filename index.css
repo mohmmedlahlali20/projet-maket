@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+  }
+  .navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    display: none;
+    z-index: 1;
+  }
+  .navbarWeb {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    z-index: 852;
+  }
+  .menu-itemsWeb :hover{
+    font-weight: bolder;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+  }
+  .containerWeb{
+    display: flex !important;
+    align-items: center !important;
+  }
+  .menu-itemsWeb{
+    display: flex;
+    gap: 4rem;
+  }
+  .menu-itemsWeb li{
+    list-style-type: none;
+  }
+  .menu-itemsWeb li a{
+    text-decoration: none;
+    color: #000;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  .navbar .menu-items {
+    display: flex;
+  }
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  .navbar .nav-container a:hover{
+      font-weight: bolder;
+  }
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar .menu-items {
+    z-index: 3;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    background: aqua;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+  }
+  
+  /* navbar-end */
+  @media (max-width: 900px) {
+    .navbar{
+      display: block;
+      z-index: 999;
+    }
+    .navWeb {
+      display: none;
+      z-index: 100;
+    }
+  }
+.menu-itemsWeb li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: rgb(14, 36, 49);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.logo {
+    position: absolute;
+    left: -300px;
+    right: 15px;
+    font-size: 1rem;
+    color: rgb(157, 160, 161);
+}
+
+.ness {
+    width: 52%;
+    height: 90vh;
+    background-color: rgb(175, 169, 169);
+    z-index: 144;
+    position: absolute;
+    right: 0px;
+}
+
+.ness #fashi {
+    position: relative;
+    top: -14px;
+    left: -143px;
+}
+
+.parents {
+    display: flex;
+}
+
+.parents h1 span {
+    color: rgb(100, 19, 19);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.parents h1 {
+    width: 297px;
+    height: 28px;
+    position: absolute;
+    right: 770px;
+    top: 70px;
+    color: rgb(29, 28, 28);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.child-ss {
+    width: 339px;
+    height: 130px;
+    position: absolute;
+    left: 14px;
+    top: 154px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Inter;
+    font-size: 37px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.child-ss h2 {
+  position: relative;
+  left: 0;
+    margin-bottom: 20px;
+    font-family: math;
+    font-size: 37px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.child-ss p {
+    position: relative;
+    top: 5px;
+    font-size: 23px;
+    font-family: math;
+    width: 539px;
+    left: 37px;
+}
+
+.ness img {
+    left: -139px;
+    position: relative;
+    height: 800px;
+    top: -12px;
+}
+
+.shoop {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    border-radius: 44px;
+    position: relative;
+    left: -574px;
+    top: -491px;
+}
+
+.shoop h3 {
+    width: 150px;
+    height: 39px;
+    position: absolute;
+    left: 29px;
+    bottom: -5px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.iqonat .loop {
+    width: 30px;
+    height: 30px;
+    top: -190px;
+    position: relative;
+    left: 1855px;
+    z-index: 999;
+}
+.img-home{
+    z-index: 999;
+    width: 256px;
+    height: 302px;
+    position: absolute;
+    right: 274px;
+    bottom: 85px;
+    border-radius: 44px;
+    background: #D9D9D9;
+}
+.img-home img{
+    left: 2px;
+    position: relative;
+    height: 213px;
+    width: 252px;
+    border-radius: 44px;
+}
+.img-home p{
+    width: 159px;
+    height: 46px;
+    left: 0;
+    position: relative;
+    right: 2px;
+    bottom: 21px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.img-home h3{
+    bottom: -55px;
+    position: relative;
+    left: 43px;
+}
+.ff{
+  position: relative;
+  top: 800px;
+}
+@media (max-width: 575px) {
+    #fashi{
+        padding-top: 15px;
+    }
+    .ness {
+        height: 51vh;
+        width: 401px;
+        position: relative;
+        left: 301px;
+        background-color: rgb(175, 169, 169);
+    }
+    .child-ss h2 {
+        position: relative;
+        top: -95px;
+        font-size: 18px;
+        font-family: math;
+        width: 146px;
+        left: -11px;
+    }
+    .child-ss p {
+        position: relative;
+        top: -105px;
+        font-size: 10px;
+        font-family: math;
+        width: 254px;
+        left: -3px;
+    }
+    .ness img {
+        position: relative;
+        top: -11px;
+        left: -58px;
+        height: 406px;
+    }
+    .shoop {
+        font-size: 74px;
+        width: 103px;
+        height: 39px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        top: -249px;
+        left: -181px;
+    }
+    .shoop h3 {
+        position: relative;
+        top: 13px;
+        font-size: 10px;
+    }
+   
+    .iqonat .loop {
+        top: -30px;
+        left: 269px;
+        position: relative;
+        /* background-color: red; */
+        /* width: 9px; */
+        height: 83px;
+    }
+    .img-home{
+        z-index: 999;
+    width: 143px;
+    height: 180px;
+    position: absolute;
+    right: -13px;
+    bottom: 433px;
+    border-radius: 44px;
+    background: #D9D9D9;
+    }
+    .img-home img{
+        left: 1px;
+        position: relative;
+        border-radius: 42px;
+        width: 141px;
+        height: 133px;
+    }
+    .img-home p{
+        width: 159px;
+        height: 46px;
+        position: relative;
+        right: 7px;
+        bottom: 21px;
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+
+
+

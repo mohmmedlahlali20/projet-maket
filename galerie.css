@@ -1,0 +1,168 @@
+.galerie {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 44px;
+    gap: 20px;
+}
+#tit{
+    position: relative;
+    left: 435px;
+}
+.galerie h3 , h2 , p{
+    margin-bottom: -14px;
+    position: relative;
+    left: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+}
+.galerie p{
+    position: relative;
+    top: -30px;
+    font-size: 30px;
+    left: 20px;
+    }
+    .galerie h3{
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        position: relative;
+        left: 400px;
+        top: -50px;
+    }
+    .op{
+        margin-top:10px ;
+    }
+
+
+.galerie img {
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 44px;
+    border: 2px solid black;
+}
+.comment{
+    background-color: azure;
+    border: 5px solid #000;
+ text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 1240px;
+    height: 199px;
+    padding: 20px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 8px;
+    /* border: 1px solid #0089FF; */
+    background: #ffffff;
+    box-shadow: -20px 3px 11px 7px rgba(0, 0, 0, 0.15);
+}
+.comment p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif   ;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    max-width: 67%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    left:-50px;
+    bottom: -30px;
+    z-index: 999;
+}
+.comme h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    max-width: 67%;
+    text-align: center ;
+
+}
+.comment img{
+    width: 100px;
+    height: auto;
+    position: relative;
+    bottom: 10px;
+    border-radius: 44px;
+    left: -180px;
+}
+.comment  h3:hover{
+    color:#ffcc00;
+
+}
+.comment p:hover {
+    color:#ff8c00;
+
+}
+.comment h3{
+    color: darkblue;
+    font-size: 18px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    right: -150px;
+
+}
+.comme{
+    position: relative;
+    left: 320px;
+}
+
+@media  (max-width: 575px) {
+    .galerie img {
+        height: 100%;
+    }
+    .galerie p{
+        position: relative;
+        left: 4px;
+    }
+        .galerie h3{
+            position: relative;
+            left: 186px;
+    }
+        .comment{
+            width: 100%;
+        }
+        .comment h3{
+            width: 11em;
+            position: relative;
+            right: -85px;
+            font-size: 11px;
+        }
+        .comment img{
+            border-radius: 44px;
+            position: relative;
+            left: -90px;
+            top: 3px;
+        }
+        .comme h1{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-family: fantasy;
+            position: relative;
+            left: 64px;
+
+        }
+        .comment p{
+            position: relative;
+            font-size: 16px;
+            left: -84px;
+        }
+        .comme{
+            position: relative;
+            left: 8px;
+        }
+}
+  
