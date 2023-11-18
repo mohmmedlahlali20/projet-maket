@@ -35,13 +35,21 @@ function validatePassword(password) {
         }
     });
   
-    const btn = document.querySelector('.navBar button');
-    const nav_ul = document.querySelector('.navBar .links ul');
+    var sidenav = document.getElementById("mySidenav");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
     
+    openBtn.onclick = openNav;
+    closeBtn.onclick = closeNav;
     
-    btn.addEventListener('click', () => {
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      sidenav.classList.add("active");
+    }
     
-        nav_ul.classList.toggle('activee');
-    })
-
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      sidenav.classList.remove("active");
+    }
+    
     
