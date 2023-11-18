@@ -11,10 +11,9 @@
     background: url(imag/dima-dallacqua-OpatAKKXE_k-unsplash.jpg);
     background-position: center;
     background-size: cover;
+    z-index: 1;
   }
-  body{
-   
-  }
+
   #aa{
     margin-top: -926px;
   }
